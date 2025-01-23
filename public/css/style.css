@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #77a6ff;
+    transition: 0.2s;;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #a5c4ff;
+}
+
+a:active {
+    text-decoration: none;
+    color: #2773ff;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #535353;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin-top: 10px;
+
+}
+
+.button:hover {
+    background-color: #8a8a8a;
+    color: #fff;
+}
+
+.button:active {
+    background-color: #454545;
+    color: #fff;
+}
+
+.logout {
+    background-color: #630000;
+
+}
+
+.logout:hover {
+    background-color: #990000;
+}
+
+.logout:active {
+    background-color: #360000;
+}
+
+
+
+.discord {
+    background-color: #5865F2;
+
+}
+
+.discord:hover {
+    background-color: #727dee;
+}
+
+.discord:active {
+    background-color: #4e5bd1;
+}
+
+.container {
+    padding: 3em;
+    text-align: center;
+    background-color: #313131;
+    color: #ffffff;
+    border-radius: 7px;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/background.webp');
+    background-size: cover;
+    z-index: -1;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label,
+form input,
+form button {
+    margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+button {
+    background-color: #00633a;
+    font-size: 1em;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #008c4a;
+}
+
+button:active {
+    background-color: #008c4a;
+}
+
+.error {
+    color: #f88c8c;
+    font-size: 1.5em;
+}
+
+.success {
+    color: #a3f88c;
+    font-size: 1.5em;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>bnbAIM Register</title>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <img src="/img/logo.png" alt="logo" width="100">
+        <h1>Welcome to bnbAIM!</h1>
+        <p>You will be sending the following information to register your bnbAIM account</p>
+        <form method="post" action="/register">
+            <label for="username">Screen Name:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <label for="passwordconfirm">Confirm Password:</label>
+            <input type="password" id="passwordconfirm" name="passwordconfirm">
+            <button type="submit">Register</button>
+        </form>
+        <% if (typeof error !== 'undefined') { %>
+            <div class="error"><%= error %></div>
+        <% } %>
+    </div>
+</body>
+</html>
