@@ -120,7 +120,7 @@ app.post("/register", async (req, res) => {
         });
       }
     } catch (error) {
-      if (error.response && error.response.status === 409) {
+      if (error.response) {
         const errorMessage = error.response.data;
         return res.render('register', { ...req.user, error: errorMessage });
       } else {
