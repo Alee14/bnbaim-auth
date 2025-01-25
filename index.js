@@ -85,7 +85,7 @@ app.get("/", async (req, res) => {
         }
       });
     } else {
-      return res.render('error', { error: 'You must be a member of that server to access this page.' });
+      return res.render('error-login', { error: 'You must be a member of that server to access this page.' });
     }
   } else {
     res.render('index', { serverName: process.env.SERVER_NAME || 'AIM', discordName: process.env.DISCORD_NAME || 'Discord' });
